@@ -1,5 +1,6 @@
 " ファイル関係
 set encoding=UTF-8  " 標準のエンコード
+set fileformat=unix " 標準の改行コード
 set hidden		  " ファイルが編集中でも他のファイルが開ける
 set autoread		" ファイルが変更された時自動的に読み込む
 
@@ -73,8 +74,17 @@ set display=lastline
 "colorscheme Tomorrow-Night-Bright
 colorscheme hybrid
 
+" フォント設定
+"set guifont=Ricty_for_Powerline:h12:cSHIFTJIS
+set guifont=Ricty:h12:cSHIFTJIS
+
+" ツールバーを削除
+set guioptions-=T
+
+"メニューを削除
+set guioptions-=m
+
 "lightline.vim関係
-"let g:lightline={'colorscheme': 'wombat'}
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'component': {
@@ -84,3 +94,5 @@ let g:lightline = {
       \ 'subseparator': { 'left': '>>', 'right': '<<' }
       \ }
 set laststatus=2
+"      \ 'separator': { 'left': '', 'right': '' },
+"      \ 'subseparator': { 'left': '', 'right': '' }
