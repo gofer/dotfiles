@@ -80,7 +80,7 @@ let g:lightline = {
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
-      \ 'separator': { 'left': '>', 'right': '<' },
-      \ 'subseparator': { 'left': '>>', 'right': '<<' }
+      \ 'separator': {'left': '⮀', 'right': '⮂'},
+      \ 'subseparator': {'left': '⮁', 'right': '⮃'}
       \ }
 set laststatus=2
